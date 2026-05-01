@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  ::selection {
+    background-color: #00FF85;
+    color: #0A0A0A;
+  }
+
+  *:focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-background;
+  }
+
+  h1, h2, h3 {
+    @apply font-display tracking-tight;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: #0A0A0A; }
+  ::-webkit-scrollbar-thumb { background: #262626; border-radius: 6px; }
+  ::-webkit-scrollbar-thumb:hover { background: #00FF85; }
+}
+
+@layer components {
+  .container-tight { @apply container max-w-5xl; }
+
+  .headline-hero {
+    @apply font-display uppercase leading-[0.9] tracking-tight;
+    font-size: clamp(3rem, 10vw, 8rem);
+  }
+
+  .headline-section {
+    @apply font-display uppercase leading-[0.95] tracking-tight;
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+
+  .nav-link {
+    @apply text-sm lowercase text-foreground/70 hover:text-foreground transition-colors;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium uppercase tracking-wider text-accent-foreground transition-transform hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium uppercase tracking-wider text-foreground transition-colors hover:border-accent hover:text-accent;
+  }
+
+  .card-surface {
+    @apply rounded-2xl border border-border bg-card overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .mask-fade-r { mask-image: linear-gradient(to right, black 80%, transparent); }
+  .mask-fade-x {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+}
