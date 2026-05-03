@@ -4,10 +4,8 @@ import { Reveal } from "./reveal";
 type Props = { images?: { src: string; alt: string }[] };
 
 const DEFAULT: { src: string; alt: string }[] = Array.from(
-  { length: 8 },
-  (_, i) => ({
-    src: `/placeholders/gallery-${i + 1}.jpg`,
-    alt: `Luan Poffo apresentação ${i + 1}`
+  { length: 7 },  (_, i) => ({
+    src: `/gallery-${i + 1}.jpg`,    alt: `Luan Poffo apresentação ${i + 1}`
   })
 );
 
