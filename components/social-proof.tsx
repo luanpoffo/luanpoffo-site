@@ -1,10 +1,12 @@
 const NAMES = [
   "Baile de Halloween Sephora",
   "Bloco Beleza Rara",
-  "MAD Club",
+  "MAD CLUB - CLUB #60 WORLD",
   "Chá da Anitta",
   "Castro Festival",
   "Dubdogz",
+  "Ivete Sangalo",
+  "Vintage Culture",
   "Pedro Sampaio",
   "Festa Black",
   "Tour Chá da Alice EUA",
