@@ -18,19 +18,19 @@ export type ServiceContent = {
 export const SERVICES: Record<string, ServiceContent> = {
   casamentos: {
     slug: "casamentos",
-    eyebrow: "Casamentos & 15 anos",
+    eyebrow: "Eventos sociais",
     title: "DJ para o seu grande dia",
     description:
-      "Atração em diversos eventos sociais pelo país, o DJ traz a versatilidade única de apresentar shows em casamentos, festas de 15 anos, formaturas e aniversários.",
+      "Atração em diversos eventos sociais pelo país, o DJ traz a versatilidade única de apresentar shows em casamentos, festas de XV anos, formaturas e aniversários.",
     heroImage: "/placeholders/service-wedding.jpg",
     galleryPrefix: "wedding",
     defaultEventType: "Casamento",
     includes: [
       "Reunião de alinhamento de repertório e momentos da festa",
-      "Estrutura de áudio e iluminação sob medida (parceria de produção)",
+      "Possibilidade de show com bailarinos",
       "Cerimônia, recepção, jantar e pista em um único contrato",
       "Set personalizado misturando os hits que você ama com EDM",
-      "Microfone para mestre de cerimônia e brindes",
+      "Criação de playlist especial da festa",
       "Atendimento bilíngue (PT/EN) para casamentos com convidados internacionais"
     ],
     faq: [
@@ -65,7 +65,7 @@ export const SERVICES: Record<string, ServiceContent> = {
       "Curadoria sonora alinhada à identidade da marca",
       "Set para ativação, coquetel e festa de encerramento",
       "Coordenação com produção, agências e fornecedores",
-      "Equipamentos profissionais (CDJs, mixer Pioneer Standard)",
+      "Opção de show com bailarinos",
       "Suporte para integrações com VJ, telão e iluminação",
       "Faturamento via PJ, contrato com SLA e cláusulas de confidencialidade"
     ],
