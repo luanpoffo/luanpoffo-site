@@ -128,7 +128,7 @@ export default function MusicaPage() {
               frameBorder="no"
               allow="autoplay"
               loading="lazy"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/luanpoffo&color=%2300ff85&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/luanpoffo&color=%2300ff85&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
               title="SoundCloud do Luan Poffo"
             />
           </div>
