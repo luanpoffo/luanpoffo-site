@@ -14,12 +14,12 @@ export const metadata = buildMetadata({
 const SETS = [
   {
     title: "Megamix Hits Brasil 2022",
-    src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    src: "https://www.youtube.com/embed/GoBwKMTUKhg?start=33",
     aspect: "aspect-video"
   },
   {
     title: "Marina da Glória — Rio de Janeiro",
-    src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    src: "https://www.youtube.com/embed/XLdIm-AlMe0?start=1",
     aspect: "aspect-video"
   }
 ];
@@ -27,12 +27,12 @@ const SETS = [
 const SINGLES = [
   {
     title: "Coração Gelado",
-    src: "https://open.spotify.com/embed/track/2takcwOaAZWiXQijPHIx7B?utm_source=generator&theme=0",
+    src: "https://open.spotify.com/embed/track/5YcbGeyx6oAX0HKr5yRu4C?utm_source=generator&theme=0",
     height: 152
   },
   {
     title: "Fire",
-    src: "https://open.spotify.com/embed/track/5Z9KJZ1uAo9P4oR3vBp0xS?utm_source=generator&theme=0",
+    src: "https://open.spotify.com/embed/track/78jCMkovzhXH9EDNQJpTld?utm_source=generator&theme=0",
     height: 152
   }
 ];
@@ -41,8 +41,7 @@ const PLATFORMS = [
   { label: "Spotify", href: SOCIAL.spotify },
   { label: "SoundCloud", href: SOCIAL.soundcloud },
   { label: "YouTube", href: SOCIAL.youtube },
-  { label: "Apple Music", href: SOCIAL.appleMusic },
-  { label: "Beatport", href: SOCIAL.beatport }
+  { label: "Apple Music", href: SOCIAL.appleMusic }
 ];
 
 export default function MusicaPage() {
