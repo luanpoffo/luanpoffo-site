@@ -22,7 +22,7 @@ const ASSETS = [
     Icon: FileText,
     title: "Rider técnico",
     desc: "Setup padrão Pioneer (CDJ-3000 + DJM-A9), monitores, mesa, ventilador e espaço para notebook.",
-    file: "/press/rider-tecnico.pdf",
+    file: "/rider-tecnico.pdf",
     label: "baixar PDF"
   },
   {
