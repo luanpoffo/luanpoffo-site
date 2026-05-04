@@ -22,6 +22,5 @@ export const SOCIAL = {
   twitter: "https://twitter.com/luanpoffo",
   soundcloud: "https://soundcloud.com/luanpoffo",
   spotify: "https://open.spotify.com/artist/luanpoffo",
-  appleMusic: "https://music.apple.com/artist/luanpoffo",
-  beatport: "https://www.beatport.com/artist/luanpoffo"
+  appleMusic: "https://music.apple.com/artist/luanpoffo"
 };
