@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -7,7 +8,7 @@ import { cn } from "@/lib/utils";
 const NAV = [
   { href: "/minha-historia", label: "minha história" },
   { href: "/musica", label: "música" },
-  { href: "/servicos/casamentos", label: "casamentos" },
+  { href: "/servicos/casamentos", label: "eventos sociais" },
   { href: "/servicos/corporativos", label: "corporativos" },
   { href: "/servicos/clubs-festivais", label: "clubs & festivais" },
   { href: "/press-kit", label: "press kit" }
