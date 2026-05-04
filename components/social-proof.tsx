@@ -1,6 +1,5 @@
 const NAMES = [
   "Baile de Halloween Sephora",
-  "Bloco Beleza Rara",
   "MAD CLUB - CLUB #60 WORLD",
   "Chá da Anitta",
   "Dubdogz",
@@ -10,6 +9,7 @@ const NAMES = [
   "Tour Chá da Alice EUA",
   "Eurotour 2026",
   "Pedro Sampaio",
+  "Bloco Beleza Rara",
 
 ];
 
