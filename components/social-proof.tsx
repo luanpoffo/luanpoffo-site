@@ -3,14 +3,14 @@ const NAMES = [
   "Bloco Beleza Rara",
   "MAD CLUB - CLUB #60 WORLD",
   "Chá da Anitta",
-  "Castro Festival",
   "Dubdogz",
-  "Ivete Sangalo",
+  "PRIDE SÃO PAULO 2025",
   "Vintage Culture",
-  "Pedro Sampaio",
   "Festa Black",
   "Tour Chá da Alice EUA",
-  "Eurotour 2026"
+  "Eurotour 2026",
+  "Pedro Sampaio",
+
 ];
 
 export function SocialProof() {
