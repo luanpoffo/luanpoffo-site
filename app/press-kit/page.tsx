@@ -13,15 +13,15 @@ export const metadata = buildMetadata({
 const ASSETS = [
   {
     Icon: ImageIcon,
-    title: "Fotos em alta",
-    desc: "Pack com 8 fotos profissionais, 300 dpi, com e sem logo aplicado.",
-    file: "/press/luanpoffo-fotos.zip",
-    label: "baixar zip (.zip)"
+    title: "Press kit completo",
+    desc: "Pasta com fotos em alta, materiais de divulgação e tudo o que mídia e produtores precisam.",
+    file: "https://drive.google.com/drive/folders/1-S0DEOpewVuDlwvQNuFxO8eWIDnRgDVB?hl=pt-br",
+    label: "abrir no Drive"
   },
   {
     Icon: FileText,
     title: "Rider técnico",
-    desc: "Setup padrão Pioneer (CDJ-3000 + DJM-A9), monitores e palco.",
+    desc: "Setup padrão Pioneer (CDJ-3000 + DJM-A9), monitores, mesa, ventilador e espaço para notebook.",
     file: "/press/rider-tecnico.pdf",
     label: "baixar PDF"
   },
@@ -29,8 +29,8 @@ const ASSETS = [
     Icon: Disc,
     title: "Logo (PNG + SVG)",
     desc: "Versões claras, escuras e monocromáticas — manual de uso incluso.",
-    file: "/press/luanpoffo-logo.zip",
-    label: "baixar zip"
+    file: "https://drive.google.com/drive/folders/1-agsmAKngD00nwJ4AEn657LE-WTcu6Cj?usp=share_link",
+    label: "abrir no Drive"
   }
 ];
 
@@ -72,7 +72,8 @@ export default function PressKitPage() {
             </p>
             <h1 className="mt-4 headline-hero text-balance">Materiais oficiais</h1>
             <p className="mt-5 max-w-2xl text-lg text-foreground/80">
-              Tudo o que mídia, produtores e contratantes precisam em um só lugar.
+              Tudo o que mídia, produtores e contratantes precisam em um só
+              lugar.
             </p>
           </Reveal>
         </div>
@@ -80,22 +81,28 @@ export default function PressKitPage() {
 
       <section className="container pb-12">
         <div className="grid gap-5 md:grid-cols-3">
-          {ASSETS.map(({ Icon, title, desc, file, label }, i) => (
-            <Reveal key={title} delay={i * 0.06}>
-              <div className="card-surface p-7 h-full flex flex-col">
-                <Icon className="text-accent" size={28} />
-                <h3 className="mt-4 font-display text-xl uppercase">{title}</h3>
-                <p className="mt-2 text-sm text-foreground/65 flex-1">{desc}</p>
-                <a
-                  href={file}
-                  download
-                  className="mt-5 inline-flex items-center gap-2 text-accent text-sm hover:underline"
-                >
-                  <Download size={16} /> {label}
-                </a>
-              </div>
-            </Reveal>
-          ))}
+          {ASSETS.map(({ Icon, title, desc, file, label }, i) => {
+            const isExternal = file.startsWith("http");
+            return (
+              <Reveal key={title} delay={i * 0.06}>
+                <div className="card-surface p-7 h-full flex flex-col">
+                  <Icon className="text-accent" size={28} />
+                  <h3 className="mt-4 font-display text-xl uppercase">{title}</h3>
+                  <p className="mt-2 text-sm text-foreground/65 flex-1">{desc}</p>
+                  <a
+                    href={file}
+                    {...(isExternal
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : { download: true })}
+                    className="mt-5 inline-flex items-center gap-2 text-accent text-sm hover:underline"
+                  >
+                    <Download size={16} />
+                    {label}
+                  </a>
+                </div>
+              </Reveal>
+            );
+          })}
         </div>
       </section>
 
@@ -106,7 +113,6 @@ export default function PressKitPage() {
             Versões curta, média e longa em português e inglês — copie e cole.
           </p>
         </Reveal>
-
         <div className="mt-10 grid gap-5 md:grid-cols-2">
           {BIOS.map((b, i) => (
             <Reveal key={b.label} delay={i * 0.04}>
