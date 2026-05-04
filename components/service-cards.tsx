@@ -5,8 +5,8 @@ import { Reveal } from "./reveal";
 
 const SERVICES = [
   {
-    title: "Casamentos & 15 anos",
-    desc: "Atração em diversos eventos sociais pelo país. Versatilidade para casamentos, debutantes, formaturas e aniversários.",
+    title: "Eventos sociais",
+    desc: "Atração em diversos eventos sociais pelo país. Versatilidade para casamentos, XV anos, formaturas e aniversários.",
     href: "/servicos/casamentos",
     image: "/placeholders/service-wedding.jpg"
   },
@@ -35,7 +35,6 @@ export function ServiceCards() {
           Para qual evento você quer contratar?
         </h2>
       </Reveal>
-
       <div className="mt-12 grid gap-6 md:grid-cols-3">
         {SERVICES.map((s, i) => (
           <Reveal key={s.href} delay={i * 0.08}>
