@@ -5,25 +5,27 @@ const TRACKS = [
   {
     title: "Coração Gelado",
     type: "Single autoral",
-    embed: "https://open.spotify.com/embed/track/2takcwOaAZWiXQijPHIx7B?utm_source=generator&theme=0",
+    embed:
+      "https://open.spotify.com/embed/track/5YcbGeyx6oAX0HKr5yRu4C?utm_source=generator&theme=0",
     height: 152
   },
   {
     title: "Fire",
     type: "Single autoral",
-    embed: "https://open.spotify.com/embed/track/5Z9KJZ1uAo9P4oR3vBp0xS?utm_source=generator&theme=0",
+    embed:
+      "https://open.spotify.com/embed/track/78jCMkovzhXH9EDNQJpTld?utm_source=generator&theme=0",
     height: 152
   },
   {
     title: "Megamix Hits Brasil",
     type: "DJ set / YouTube",
-    embed: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    embed: "https://www.youtube.com/embed/GoBwKMTUKhg?start=33",
     height: 280
   },
   {
     title: "Marina da Glória — RJ",
     type: "DJ set / YouTube",
-    embed: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    embed: "https://www.youtube.com/embed/XLdIm-AlMe0?start=1",
     height: 280
   }
 ];
@@ -46,7 +48,6 @@ export function MusicGrid() {
           </Link>
         </Reveal>
       </div>
-
       <div className="mt-12 grid gap-5 md:grid-cols-2">
         {TRACKS.map((t, i) => (
           <Reveal key={t.title} delay={i * 0.06}>
