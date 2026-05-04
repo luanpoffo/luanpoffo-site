@@ -1,12 +1,14 @@
 const NAMES = [
-  "Sephora Halloween",
+  "Baile de Halloween Sephora",
   "Bloco Beleza Rara",
   "MAD Club",
-  "Anitta",
-  "Vintage Culture",
-  "Ivete Sangalo",
+  "Chá da Anitta",
+  "Castro Festival",
   "Dubdogz",
-  "Pedro Sampaio"
+  "Pedro Sampaio",
+  "Festa Black",
+  "Tour Chá da Alice EUA",
+  "Eurotour 2026"
 ];
 
 export function SocialProof() {
