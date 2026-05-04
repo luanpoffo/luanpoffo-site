@@ -11,22 +11,64 @@ type DateItem = {
 
 const PLACEHOLDER: DateItem[] = [
   {
-    date: "06 jun 2026",
-    city: "São Paulo, BR",
-    venue: "Audio Club",
-    type: "Open format / EDM"
+    date: "09 mai 2026",
+    city: "Fortaleza, BR",
+    venue: "Festa Patricia",
+    type: "Pop"
   },
   {
-    date: "12 jul 2026",
+    date: "16 mai 2026",
+    city: "Amsterdã, NL",
+    venue: "Alien Superstar",
+    type: "EDM"
+  },
+  {
+    date: "23 mai 2026",
     city: "Lisboa, PT",
-    venue: "Lust in Rio",
-    type: "Tour Europa"
+    venue: "Trumps",
+    type: "Open Format"
   },
   {
-    date: "23 ago 2026",
-    city: "Miami, US",
-    venue: "Story Nightclub",
-    type: "Residência internacional"
+    date: "24 mai 2026",
+    city: "Lausanne, CH",
+    venue: "Mad Club",
+    type: "EDM"
+  },
+  {
+    date: "30 mai 2026",
+    city: "Porto, PT",
+    venue: "Lumen Luxury Club",
+    type: "EDM"
+  },
+  {
+    date: "31 mai 2026",
+    city: "Dublin, IE",
+    venue: "Dicey's Garden",
+    type: "Open Format"
+  },
+  {
+    date: "05 jun 2026",
+    city: "Florianópolis, BR",
+    venue: "Aniversário Valentina",
+    type: "Open Format"
+  },
+  {
+    date: "06 jun 2026",
+    city: "Campo Alegre, BR",
+    venue: "Casamento Fernanda e Pedro",
+    type: "Open Format"
+  },
+  {
+    date: "07 jun 2026",
+    city: "São Paulo, BR",
+    venue: "Camarote Paulista",
+    type: "Open Format"
+  },
+  {
+    date: "07 jun 2026",
+    city: "São Paulo, BR",
+    venue: "After Pride Volt Club SP",
+    type: "Open Format"
   }
 ];
 
@@ -39,7 +81,6 @@ export function UpcomingDates({ items = PLACEHOLDER }: { items?: DateItem[] }) {
         </p>
         <h2 className="mt-3 headline-section text-balance">Próximas datas</h2>
       </Reveal>
-
       <ul className="mt-12 divide-y divide-border border-y border-border">
         {items.map((it, i) => (
           <Reveal key={i} delay={i * 0.05}>
@@ -51,7 +92,8 @@ export function UpcomingDates({ items = PLACEHOLDER }: { items?: DateItem[] }) {
               <div>
                 <p className="font-medium">{it.venue}</p>
                 <p className="text-sm text-foreground/60 flex items-center gap-1">
-                  <MapPin size={14} /> {it.city}
+                  <MapPin size={14} />
+                  {it.city}
                 </p>
               </div>
               <p className="text-sm text-foreground/60 md:text-right">
