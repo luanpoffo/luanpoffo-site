@@ -9,7 +9,7 @@ export function ServiceIncludes({ items }: { items: string[] }) {
           O que está incluso
         </p>
         <h2 className="mt-3 headline-section text-balance">
-          Experiência completa, sem dor de cabeça
+          Experiência completa, uma noite inesquecível
         </h2>
       </Reveal>
       <ul className="mt-12 grid gap-4 md:grid-cols-2">
