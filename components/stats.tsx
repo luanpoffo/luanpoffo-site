@@ -3,9 +3,9 @@ import { Reveal } from "./reveal";
 
 const STATS = [
   { value: 10, suffix: "+", label: "anos de carreira" },
-  { value: 15, suffix: "", label: "estados brasileiros" },
+  { value: 15, suffix: "+", label: "estados brasileiros" },
   { value: 8, suffix: "", label: "países" },
-  { value: 100, suffix: "k+", label: "pessoas dançando" }
+  { value: 700, suffix: "k+", label: "seguidores" }
 ];
 
 export function Stats() {
@@ -13,7 +13,8 @@ export function Stats() {
     <section className="container py-20 md:py-28">
       <Reveal>
         <h2 className="headline-section text-balance max-w-3xl">
-          Números que fazem a pista <span className="text-accent">tremer</span>
+          Números que fazem a pista{" "}
+          <span className="text-accent">tremer</span>
         </h2>
       </Reveal>
       <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
